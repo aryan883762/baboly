@@ -1,0 +1,75 @@
+.profile-setting {
+    .vs-tabs--content {
+        padding: 0;
+      } 
+    .vs-tabs-position-left {
+        .con-ul-tabs {
+            background-color: #fff;
+        }
+
+        .vs-tabs--li {
+            padding: 10px 25px;
+            border-bottom: 1px solid #eee;
+        }
+    }
+    .ul-tabs {
+        .vs-tabs--li{
+            .vs-tabs--btn {
+                i.vs-icon {
+                    margin-top: -10px;
+                }
+                span {
+                    text-align: left;
+                }
+                span::after {
+                    display: block;
+                    position: unset;
+                    font-size: 10px;
+                }
+
+            }
+        }
+        .vs-tabs--li:nth-child(1) {
+            .vs-tabs--btn span::after {
+                    content: "Your General Information";
+            }
+        }
+        .vs-tabs--li:nth-child(2) {
+            .vs-tabs--btn span::after {
+                    content: "Change your password";
+            }
+        }
+        .vs-tabs--li:nth-child(3) {
+            .vs-tabs--btn span::after {
+                    content: "Your account privacy";
+            }
+        }
+        .vs-tabs--li:nth-child(4) {
+            .vs-tabs--btn span::after {
+                    content: "Your social accounts";
+            }
+        }
+        .vs-tabs--li:nth-child(5) {
+            .vs-tabs--btn span::after {
+                    content: "Credit cards and bank accounts";
+            }
+        }
+        .vs-tabs--li:nth-child(6) {
+            .vs-tabs--btn span::after {
+                    content: "Your notifications Preference";
+            }
+        }
+    }
+    .profile-page-cards {
+        .vx-card__body {
+            padding: 0;
+            min-height: 460px;
+        }
+        h2.title {
+            padding: 35px 0px 10px 2.5rem;
+        }
+        .profile-content {
+            padding: 0 2.5rem 6.5rem;
+        }
+    }
+}

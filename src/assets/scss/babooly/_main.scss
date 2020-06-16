@@ -1,0 +1,228 @@
+@import '../vuexy/variables';
+
+
+.overlay {
+  position:absolute;
+  left: 0;
+  right: 0;
+  padding: 15px;
+
+}
+.overlay-default {
+  background-color: rgba(150, 156, 156, 0.75);
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+
+}
+.overlay-primary {
+  background-color: rgba(10, 168, 158, 0.75);
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+
+}
+.overlay-shade-top {
+  background-image: -webkit-linear-gradient(top, rgba(12, 12, 12, 0.6) 0%, rgba(12, 12, 12, 0) 100%);
+  background-image: -o-linear-gradient(top, rgba(12, 12, 12, 0.6) 0%, rgba(12, 12, 12, 0) 100%);
+  background-image: linear-gradient(to bottom, rgba(12, 12, 12, 0.6) 0%, rgba(12, 12, 12, 0) 100%);
+  background-repeat:repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#990c0c0c', endColorstr='#000c0c0c', GradientType=0);
+
+}
+.overlay-shade-bottom {
+  background-image: -webkit-linear-gradient(top, rgba(12, 12, 12, 0) 0%, rgba(12, 12, 12, 0.6) 100%);
+  background-image: -o-linear-gradient(top, rgba(12, 12, 12, 0) 0%, rgba(12, 12, 12, 0.6) 100%);
+  background-image: linear-gradient(to bottom, rgba(12, 12, 12, 0) 0%, rgba(12, 12, 12, 0.6) 100%);
+  background-repeat:repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000c0c0c', endColorstr='#990c0c0c', GradientType=0);
+
+}
+.mask {
+  position:relative;
+  overflow:hidden;
+
+}
+.bottom-layer {
+  position:absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+
+}
+.top-layer {
+  position:relative;
+  z-index: 1;
+
+}
+.stick-top-left,
+.stick-top-right,
+.stick-top-left-right {
+  position:absolute;
+  top: 0;
+
+}
+.stick-bottom-left,
+.stick-bottom-right,
+.stick-bottom-left-right {
+  position:absolute;
+  bottom: 0;
+
+}
+.stick-top-left,
+.stick-bottom-left,
+.stick-top-left-right,
+.stick-bottom-left-right {
+  left: 0;
+
+}
+.stick-top-right,
+.stick-bottom-right,
+.stick-top-left-right,
+.stick-bottom-left-right {
+  right: 0;
+
+}
+
+.img-backdrop {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.img-backdrop img {
+  display: block;
+  min-width: 100%;
+  min-height: 100%;
+  height: auto;
+}
+
+.holder {
+  position: relative;
+}
+
+
+
+.vue-form-wizard.md {
+  .wizard-navigation {
+
+    .wizard-progress-with-circle {
+      top: 25px !important;
+    }
+
+    .wizard-nav {
+
+      .wizard-icon-circle {
+        border: 3px solid #cccccc;
+        width: 40px;
+        height: 40px;
+
+        .wizard-icon {
+          font-size: 1.0rem;
+        }
+      }
+
+      .stepTitle {
+        color: #626262;
+      }
+    }
+  }
+}
+
+
+// Create Ticket DIALOG
+.con-vs-dialog.create-ticket {
+  .vs-dialog {
+    max-width: 600px;
+    // max-height: 95vh;
+
+    .vs-dialog-text {
+      padding: 0;
+
+      .scroll-area {
+        max-height: 75vh;
+
+        &:not(.ps) {
+          overflow-y: auto;
+        }
+      }
+
+      .compose-mail-attachment {
+        .con-input-upload {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .con-img-upload {
+
+    .con-input-upload {
+      height: 2.5rem;
+      width: 100%;
+    }
+
+    .img-upload {
+      // height: 4rem;
+      margin: 0;
+      margin-bottom: .5rem;
+      margin-right: 1.5rem;
+    }
+  }
+
+  .quill-editor {
+    margin-bottom: 1.5rem
+  }
+
+  .ql-editor {
+    height: 150px;
+  }
+}
+
+// White Button
+.white-btn.vs-button-primary.vs-button-filled {
+  background: #fffefe!important;
+  color: black!important;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  font-size: 10px;
+  padding: 0.5rem 0.5rem;
+}
+//list-slot
+.vs-custom-list {
+   padding: 0!important;
+  .vs-list--item {
+    padding: 20px!important;
+    .vs-list--slot {
+      display: contents;
+      margin-left: 0;
+      .list-titles {
+        font-size: 15px;
+        line-height: 23px;
+        color: #000000;
+        margin-left: 15px;
+        a{
+          color: #000000;
+          font-size: 15px;
+        }
+      }
+      i.vs-icon {
+        font-size: 20px!important;
+        padding: 0!important;
+      }
+    }
+  }
+}
+//rating progress
+.rating-progress {
+  .vs-progress--foreground {
+    border-radius: 3px!important;
+  }
+}

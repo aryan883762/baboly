@@ -1,0 +1,34 @@
+#venue-details-page {
+    .venue-card-media {
+        .vs-card--header {
+          padding: 0;
+          -webkit-box-shadow: none;
+          box-shadow: none;
+        }
+        .vs-card--content {
+            padding: 0;
+        }
+    }
+    .venue-menu-tab {
+        li {
+            div {
+                border-bottom: 2px solid transparent;   
+                transition: 0.5s ease;
+                &:hover {
+                    color: #9c27b0;
+                }
+            }
+            div.router-link-exact-active, div.router-link-active {
+                border-bottom: 1.5px solid #9c27b0;
+                color: #9c27b0;
+            }
+        }
+    }
+    .venue-qa {
+        .search-question {
+            input {
+                background: #F2F2F2;
+            }
+        }
+    }
+}
